@@ -1,0 +1,25 @@
+Wrapper_task_1
+
+I have a .dat file in Unix server which has a single date in yyyy-mm-dd format.
+i want to write a script in bash which will compare the date with the month end date of previous month(calendar month end date)
+So if my script is invoked  today 29th August 2023 it will have to compare the date which is the file with 31st-July-2023 and give an oputput if the file date is greater or less than 31st-july-2023
+
+#!/bin/bash
+
+# Path to your .dat file --date from your filr
+dat_file="/path/to/your/file.dat"
+
+# Read the date from the .dat file
+file_date=$(cat "$dat_file")
+
+# Get the last day of the previous month
+last_month_end=$(date -d "$(date +'%Y-%m-01') - 1 day" +'%Y-%m-%d')
+
+# Compare the file date with the last day of the previous month
+if [[ "$file_date" > "$last_month_end" ]]; then
+  echo "File date ($file_date) is greater than the last day of the previous month ($last_month_end)"
+elif [[ "$file_date" < "$last_month_end" ]]; then
+  echo "File date ($file_date) is less than the last day of the previous month ($last_month_end)"
+else
+  echo "File date ($file_date) is the same as the last day of the previous month ($last_month_end)"
+fi
