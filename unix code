@@ -1,0 +1,3 @@
+input_date="2023-09-07"
+last_day_of_previous_month=$(date -d "$input_date" '+%Y-%m-01' | date -d "@$(xargs -I{} date -d "{} - 1 day" '+%s')" '+%Y-%m-%d')
+echo "$last_day_of_previous_month"
