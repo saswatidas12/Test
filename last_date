@@ -1,0 +1,20 @@
+# Assuming the input date is in yyyy-mm-dd format
+input_date="2023-09-13"
+
+# Extract the year and month from the input date
+year=$(date -d "$input_date" +%Y)
+month=$(date -d "$input_date" +%m)
+
+# Subtract 1 from the month to get the previous month
+# If the current month is January, subtract 1 from the year as well
+if [ "$month" -eq 1 ]; then
+    year=$((year - 1))
+    month=12
+else
+    month=$((month - 1))
+fi
+
+# Construct the last day of the previous month in yyyy-mm-dd format
+last_day="${year}-${month}-$(date -d "${year}-${month}-01" -d '-1 day' +%d)"
+
+echo "$last_day"
