@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Informatica proprietary -->
+<imx:IMX xmlns:imx="http://com.informatica.imx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" serializationSpecVersion="14.0" crcEnabled="1" xmlns:common1="http://com.informatica.workflow.feature.metadata.common/0" versioncommon1="0.1.1" xmlns:common2="http://com.informatica.ds.app.feature.metadata.common/0" versioncommon2="0.0.1" xmlns:project="http://com.informatica.metadata.common.project/2" versionproject="2.2.0" xmlns:binding="http://com.informatica.metadata.common.binding/1" versionbinding="1.13.0" xmlns:source1="http://com.informatica.metadata.common.txhandlerconfig.source/2" versionsource1="2.1.0" xmlns:source="http://com.informatica.metadata.common.transformation.source/2" versionsource="2.1.0" xmlns:common3="http://com.informatica.ds.app.metadata.common/0" versioncommon3="0.0.1" xmlns:target1="http://com.informatica.metadata.common.txhandlerconfig.target/2" versiontarget1="2.4.0" xmlns:resourceaccess1="http://com.informatica.metadata.common.txhandlerconfig.resourceaccess/2" versionresourceaccess1="2.1.0" xmlns:datasourceoperation="http://com.informatica.metadata.relational.datasourceoperation/2" versiondatasourceoperation="2.11.0" xmlns:optimizerconfig="http://com.informatica.metadata.common.optimizerconfig/1" versionoptimizerconfig="1.0.0" xmlns:property="http://com.informatica.metadata.common.property/1" versionproperty="1.2.0" xmlns:rank="http://com.informatica.metadata.common.transformation.rank/2" versionrank="2.6.0" xmlns:mapping="http://com.informatica.metadata.common.task.mapping/1" versionmapping="1.13.0" xmlns:adapter="http://com.informatica.metadata.common.adapter/2" versionadapter="2.2.0" xmlns:workflow="http://com.informatica.metadata.common.workflow/1" versionworkflow="1.4.1" xmlns:sdkmodelextension="http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1" versionsdkmodelextension="1.1.0" xmlns:datahandler="http://com.informatica.metadata.common.datahandler/2" versiondatahandler="2.2.0" xmlns:runtime="http://com.informatica.metadata.common.runtime/2" versionruntime="2.14.0" xmlns:dsoconfig1="http://com.informatica.metadata.common.dsoconfig/2" versiondsoconfig1="2.1.0" xmlns:core="http://com.informatica.metadata.common.core/2" versioncore="2.2.1" xmlns:Hive="http://com.informatica.adapter.Hive/1" versionHive="1.9.0" xmlns:folder="http://com.informatica.metadata.common.folder/2" versionfolder="2.1.1" xmlns:task="http://com.informatica.metadata.common.task/1" versiontask="1.4.0" xmlns:mapping1="http://com.informatica.metadata.common.mapping/2" versionmapping1="2.11.1" xmlns:basic="http://com.informatica.metadata.common.task.basic/1" versionbasic="1.4.0" xmlns:genericextension="http://com.informatica.basemodel.utils.metadata.genericextension/1" versiongenericextension="1.1.0" xmlns:typelibrary="http://com.informatica.metadata.common.typesystem.typelibrary/2" versiontypelibrary="2.5.0" xmlns:description="http://com.informatica.metadata.common.description/2" versiondescription="2.1.0" xmlns:datarecord="http://com.informatica.metadata.relational.datarecord/2" versiondatarecord="2.5.0" xmlns:connectinfo="http://com.informatica.metadata.common.connectinfo/2" versionconnectinfo="2.4.0" xmlns:common="http://com.informatica.ds.app.spec.metadata.common/0" versioncommon="0.6.1" xmlns:optimizer="http://com.informatica.metadata.common.optimizer/1" versionoptimizer="1.0.1" xmlns:txhandlerconfig="http://com.informatica.metadata.common.txhandlerconfig/2" versiontxhandlerconfig="2.1.1" xmlns:parameter="http://com.informatica.metadata.common.parameter/9" versionparameter="9.11.1" xmlns:hadoop="http://com.informatica.metadata.common.runtime.hadoop/1" versionhadoop="1.11.0" xmlns:value="http://com.informatica.metadata.common.value/1" versionvalue="1.1.0" xmlns:modelextension="http://com.informatica.metadata.common.modelextension/2" versionmodelextension="2.1.0" xmlns:modeledtypes="http://com.informatica.metadata.common.modeledtypes/1" versionmodeledtypes="1.0.0" xmlns:types="http://com.informatica.metadata.common.types/2" versiontypes="2.4.0" xmlns:expression="http://com.informatica.metadata.common.transformation.expression/2" versionexpression="2.3.0" xmlns:datasourceoperation1="http://com.informatica.metadata.common.datasourceoperation/2" versiondatasourceoperation1="2.6.1" xmlns:genericannotation="http://com.informatica.metadata.common.genericannotation/2" versiongenericannotation="2.1.0" xmlns:transformation="http://com.informatica.metadata.common.transformation/3" versiontransformation="3.6.0" xmlns:target="http://com.informatica.metadata.common.transformation.target/2" versiontarget="2.4.0" xmlns:resourceaccess="http://com.informatica.metadata.common.transformation.resourceaccess/2" versionresourceaccess="2.3.0" xmlns:dsoconfig="http://com.informatica.metadata.relational.dsoconfig/2" versiondsoconfig="2.2.0" xmlns:relational="http://com.informatica.metadata.infasdk.dynconnectinfo.relational/1" versionrelational="1.1.0" xmlns:pdo="http://com.informatica.metadata.common.optimizerconfig.pdo/1" versionpdo="1.0.0" xmlns:typesystem="http://com.informatica.metadata.common.typesystem/2" versiontypesystem="2.2.0" xsi:schemaLocation="http://com.informatica.imx IMX.xsd http://com.informatica.workflow.feature.metadata.common/0 com.informatica.workflow.feature.metadata.common.xsd http://com.informatica.ds.app.feature.metadata.common/0 com.informatica.ds.app.feature.metadata.common.xsd http://com.informatica.metadata.common.project/2 com.informatica.metadata.common.project.xsd http://com.informatica.metadata.common.binding/1 com.informatica.metadata.common.binding.xsd http://com.informatica.metadata.common.txhandlerconfig.source/2 com.informatica.metadata.common.txhandlerconfig.source.xsd http://com.informatica.metadata.common.transformation.source/2 com.informatica.metadata.common.transformation.source.xsd http://com.informatica.ds.app.metadata.common/0 com.informatica.ds.app.metadata.common.xsd http://com.informatica.metadata.common.txhandlerconfig.target/2 com.informatica.metadata.common.txhandlerconfig.target.xsd http://com.informatica.metadata.common.txhandlerconfig.resourceaccess/2 com.informatica.metadata.common.txhandlerconfig.resourceaccess.xsd http://com.informatica.metadata.relational.datasourceoperation/2 com.informatica.metadata.relational.datasourceoperation.xsd http://com.informatica.metadata.common.optimizerconfig/1 com.informatica.metadata.common.optimizerconfig.xsd http://com.informatica.metadata.common.property/1 com.informatica.metadata.common.property.xsd http://com.informatica.metadata.common.transformation.rank/2 com.informatica.metadata.common.transformation.rank.xsd http://com.informatica.metadata.common.task.mapping/1 com.informatica.metadata.common.task.mapping.xsd http://com.informatica.metadata.common.adapter/2 com.informatica.metadata.common.adapter.xsd http://com.informatica.metadata.common.workflow/1 com.informatica.metadata.common.workflow.xsd http://com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension/1 com.informatica.metadata.infasdk.connectinfo.common.sdkmodelextension.xsd http://com.informatica.metadata.common.datahandler/2 com.informatica.metadata.common.datahandler.xsd http://com.informatica.metadata.common.runtime/2 com.informatica.metadata.common.runtime.xsd http://com.informatica.metadata.common.dsoconfig/2 com.informatica.metadata.common.dsoconfig.xsd http://com.informatica.metadata.common.core/2 com.informatica.metadata.common.core.xsd http://com.informatica.adapter.Hive/1 com.informatica.adapter.Hive.xsd http://com.informatica.metadata.common.folder/2 com.informatica.metadata.common.folder.xsd http://com.informatica.metadata.common.task/1 com.informatica.metadata.common.task.xsd http://com.informatica.metadata.common.mapping/2 com.informatica.metadata.common.mapping.xsd http://com.informatica.metadata.common.task.basic/1 com.informatica.metadata.common.task.basic.xsd http://com.informatica.basemodel.utils.metadata.genericextension/1 com.informatica.basemodel.utils.metadata.genericextension.xsd http://com.informatica.metadata.common.typesystem.typelibrary/2 com.informatica.metadata.common.typesystem.typelibrary.xsd http://com.informatica.metadata.common.description/2 com.informatica.metadata.common.description.xsd http://com.informatica.metadata.relational.datarecord/2 com.informatica.metadata.relational.datarecord.xsd http://com.informatica.metadata.common.connectinfo/2 com.informatica.metadata.common.connectinfo.xsd http://com.informatica.ds.app.spec.metadata.common/0 com.informatica.ds.app.spec.metadata.common.xsd http://com.informatica.metadata.common.optimizer/1 com.informatica.metadata.common.optimizer.xsd http://com.informatica.metadata.common.txhandlerconfig/2 com.informatica.metadata.common.txhandlerconfig.xsd http://com.informatica.metadata.common.parameter/9 com.informatica.metadata.common.parameter.xsd http://com.informatica.metadata.common.runtime.hadoop/1 com.informatica.metadata.common.runtime.hadoop.xsd http://com.informatica.metadata.common.value/1 com.informatica.metadata.common.value.xsd http://com.informatica.metadata.common.modelextension/2 com.informatica.metadata.common.modelextension.xsd http://com.informatica.metadata.common.modeledtypes/1 com.informatica.metadata.common.modeledtypes.xsd http://com.informatica.metadata.common.types/2 com.informatica.metadata.common.types.xsd http://com.informatica.metadata.common.transformation.expression/2 com.informatica.metadata.common.transformation.expression.xsd http://com.informatica.metadata.common.datasourceoperation/2 com.informatica.metadata.common.datasourceoperation.xsd http://com.informatica.metadata.common.genericannotation/2 com.informatica.metadata.common.genericannotation.xsd http://com.informatica.metadata.common.transformation/3 com.informatica.metadata.common.transformation.xsd http://com.informatica.metadata.common.transformation.target/2 com.informatica.metadata.common.transformation.target.xsd http://com.informatica.metadata.common.transformation.resourceaccess/2 com.informatica.metadata.common.transformation.resourceaccess.xsd http://com.informatica.metadata.relational.dsoconfig/2 com.informatica.metadata.relational.dsoconfig.xsd http://com.informatica.metadata.infasdk.dynconnectinfo.relational/1 com.informatica.metadata.infasdk.dynconnectinfo.relational.xsd http://com.informatica.metadata.common.optimizerconfig.pdo/1 com.informatica.metadata.common.optimizerconfig.pdo.xsd http://com.informatica.metadata.common.typesystem/2 com.informatica.metadata.common.typesystem.xsd">
+<project:Project imx:id="U:RR2LqVY6Ee6PFifo29Pxkw" name="ConnectInfoProject">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="PROJECT_TYPE" value1="CONNECTINFO_DEPLOYMENT_UNIT"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<contents>
+<IObject imx:id="stringIdentity:HIVE_conn_integration" xsi:type="Hive:HiveConnectInfo" connectionType="com.informatica.adapter.Hive.HiveConnectInfo" name="HIVE_conn_integration">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<defaultAttributes imx:id="U:CztqBFPEEequXg4XBgp_Bw" xsi:type="connectinfo:ConnectionPoolAttributes"/>
+<modelExtension imx:id="ID_1" xsi:type="sdkmodelextension:GenericSDKConnectInfoModelExtension">
+<genericContainer imx:id="ID_2" xsi:type="genericextension:ExtensionContainer" extensionClass="com.informatica.adapter.Hive.HiveConnectInfoExtension" markerClass="com.informatica.adapter.Hive.HiveConnectInfo" version="1.9.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_3" xsi:type="genericextension:ExtensionAttribute" propertyName="bypassHiveJDBCServer">
+<propertyValue imx:id="ID_4" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_5" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterConfigId">
+<propertyValue imx:id="ID_6" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_7" xsi:type="genericextension:ExtensionAttribute" propertyName="customProperties">
+<propertyValue imx:id="ID_8" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_9" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxDriverName">
+<propertyValue imx:id="ID_10" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_11" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxPassword">
+<propertyValue imx:id="ID_12" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_13" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxUrl">
+<propertyValue imx:id="ID_14" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_15" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxUsername">
+<propertyValue imx:id="ID_16" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_17" xsi:type="genericextension:ExtensionAttribute" propertyName="databaseName">
+<propertyValue imx:id="ID_18" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_19" xsi:type="genericextension:ExtensionAttribute" propertyName="defaultFSURI">
+<propertyValue imx:id="ID_20" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_21" xsi:type="genericextension:ExtensionAttribute" propertyName="fsDefaultNameURL">
+<propertyValue imx:id="ID_22" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_23" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopClusterName">
+<propertyValue imx:id="ID_24" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_25" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveJdbcDriverClassName">
+<propertyValue imx:id="ID_26" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_27" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveStagingDirectoryOnHDFS">
+<propertyValue imx:id="ID_28" xsi:type="genericextension:StringValue" dataValue="%2Ftmp"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_29" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveWarehouseDirectoryOnHDFS">
+<propertyValue imx:id="ID_30" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_31" xsi:type="genericextension:ExtensionAttribute" propertyName="isKerberized">
+<propertyValue imx:id="ID_32" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_33" xsi:type="genericextension:ExtensionAttribute" propertyName="jobTrackerURI">
+<propertyValue imx:id="ID_34" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_35" xsi:type="genericextension:ExtensionAttribute" propertyName="jobTrackerURL">
+<propertyValue imx:id="ID_36" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_37" xsi:type="genericextension:ExtensionAttribute" propertyName="localMetastore">
+<propertyValue imx:id="ID_38" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_39" xsi:type="genericextension:ExtensionAttribute" propertyName="metaStoreWHDir">
+<propertyValue imx:id="ID_40" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_41" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseDriver">
+<propertyValue imx:id="ID_42" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_43" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabasePassword">
+<propertyValue imx:id="ID_44" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_45" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseURI">
+<propertyValue imx:id="ID_46" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_47" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseUserName">
+<propertyValue imx:id="ID_48" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_49" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreExecutionMode">
+<propertyValue imx:id="ID_50" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_51" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreURL">
+<propertyValue imx:id="ID_52" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_53" xsi:type="genericextension:ExtensionAttribute" propertyName="pushDownMode">
+<propertyValue imx:id="ID_54" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_55" xsi:type="genericextension:ExtensionAttribute" propertyName="relationalSourceAndTarget">
+<propertyValue imx:id="ID_56" xsi:type="genericextension:BooleanValue" dataValue="true"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_57" xsi:type="genericextension:ExtensionAttribute" propertyName="remoteMetastoreURI">
+<propertyValue imx:id="ID_58" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_59" xsi:type="genericextension:ExtensionAttribute" propertyName="s3AccessId">
+<propertyValue imx:id="ID_60" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_61" xsi:type="genericextension:ExtensionAttribute" propertyName="s3AccessKey">
+<propertyValue imx:id="ID_62" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_63" xsi:type="genericextension:ExtensionAttribute" propertyName="s3ServerSideEncryption">
+<propertyValue imx:id="ID_64" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_65" xsi:type="genericextension:ExtensionAttribute" propertyName="sqlAuthorized">
+<propertyValue imx:id="ID_66" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_67" xsi:type="genericextension:ExtensionAttribute" propertyName="stgTblCompressionCodecClass">
+<propertyValue imx:id="ID_68" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_69" xsi:type="genericextension:ExtensionAttribute" propertyName="stgTblCompressionCodecType">
+<propertyValue imx:id="ID_70" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</modelExtension>
+</IObject>
+<IObject imx:id="stringIdentity:HIVE_conn_dal" xsi:type="Hive:HiveConnectInfo" connectionType="com.informatica.adapter.Hive.HiveConnectInfo" name="HIVE_conn_dal">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<defaultAttributes imx:id="U:Pz7YZlPEEequXg4XBgp_Bw" xsi:type="connectinfo:ConnectionPoolAttributes"/>
+<modelExtension imx:id="ID_71" xsi:type="sdkmodelextension:GenericSDKConnectInfoModelExtension">
+<genericContainer imx:id="ID_72" xsi:type="genericextension:ExtensionContainer" extensionClass="com.informatica.adapter.Hive.HiveConnectInfoExtension" markerClass="com.informatica.adapter.Hive.HiveConnectInfo" version="1.9.0">
+<attributes>
+<ExtensionAttribute imx:id="ID_73" xsi:type="genericextension:ExtensionAttribute" propertyName="bypassHiveJDBCServer">
+<propertyValue imx:id="ID_74" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_75" xsi:type="genericextension:ExtensionAttribute" propertyName="clusterConfigId">
+<propertyValue imx:id="ID_76" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_77" xsi:type="genericextension:ExtensionAttribute" propertyName="customProperties">
+<propertyValue imx:id="ID_78" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_79" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxDriverName">
+<propertyValue imx:id="ID_80" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_81" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxPassword">
+<propertyValue imx:id="ID_82" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_83" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxUrl">
+<propertyValue imx:id="ID_84" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_85" xsi:type="genericextension:ExtensionAttribute" propertyName="dataStoreCnxUsername">
+<propertyValue imx:id="ID_86" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_87" xsi:type="genericextension:ExtensionAttribute" propertyName="databaseName">
+<propertyValue imx:id="ID_88" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_89" xsi:type="genericextension:ExtensionAttribute" propertyName="defaultFSURI">
+<propertyValue imx:id="ID_90" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_91" xsi:type="genericextension:ExtensionAttribute" propertyName="fsDefaultNameURL">
+<propertyValue imx:id="ID_92" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_93" xsi:type="genericextension:ExtensionAttribute" propertyName="hadoopClusterName">
+<propertyValue imx:id="ID_94" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_95" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveJdbcDriverClassName">
+<propertyValue imx:id="ID_96" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_97" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveStagingDirectoryOnHDFS">
+<propertyValue imx:id="ID_98" xsi:type="genericextension:StringValue" dataValue="%2Ftmp"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_99" xsi:type="genericextension:ExtensionAttribute" propertyName="hiveWarehouseDirectoryOnHDFS">
+<propertyValue imx:id="ID_100" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_101" xsi:type="genericextension:ExtensionAttribute" propertyName="isKerberized">
+<propertyValue imx:id="ID_102" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_103" xsi:type="genericextension:ExtensionAttribute" propertyName="jobTrackerURI">
+<propertyValue imx:id="ID_104" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_105" xsi:type="genericextension:ExtensionAttribute" propertyName="jobTrackerURL">
+<propertyValue imx:id="ID_106" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_107" xsi:type="genericextension:ExtensionAttribute" propertyName="localMetastore">
+<propertyValue imx:id="ID_108" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_109" xsi:type="genericextension:ExtensionAttribute" propertyName="metaStoreWHDir">
+<propertyValue imx:id="ID_110" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_111" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseDriver">
+<propertyValue imx:id="ID_112" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_113" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabasePassword">
+<propertyValue imx:id="ID_114" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_115" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseURI">
+<propertyValue imx:id="ID_116" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_117" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreDatabaseUserName">
+<propertyValue imx:id="ID_118" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_119" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreExecutionMode">
+<propertyValue imx:id="ID_120" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_121" xsi:type="genericextension:ExtensionAttribute" propertyName="metastoreURL">
+<propertyValue imx:id="ID_122" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_123" xsi:type="genericextension:ExtensionAttribute" propertyName="pushDownMode">
+<propertyValue imx:id="ID_124" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_125" xsi:type="genericextension:ExtensionAttribute" propertyName="relationalSourceAndTarget">
+<propertyValue imx:id="ID_126" xsi:type="genericextension:BooleanValue" dataValue="true"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_127" xsi:type="genericextension:ExtensionAttribute" propertyName="remoteMetastoreURI">
+<propertyValue imx:id="ID_128" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_129" xsi:type="genericextension:ExtensionAttribute" propertyName="s3AccessId">
+<propertyValue imx:id="ID_130" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_131" xsi:type="genericextension:ExtensionAttribute" propertyName="s3AccessKey">
+<propertyValue imx:id="ID_132" xsi:type="genericextension:SensitiveStringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_133" xsi:type="genericextension:ExtensionAttribute" propertyName="s3ServerSideEncryption">
+<propertyValue imx:id="ID_134" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_135" xsi:type="genericextension:ExtensionAttribute" propertyName="sqlAuthorized">
+<propertyValue imx:id="ID_136" xsi:type="genericextension:BooleanValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_137" xsi:type="genericextension:ExtensionAttribute" propertyName="stgTblCompressionCodecClass">
+<propertyValue imx:id="ID_138" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+<ExtensionAttribute imx:id="ID_139" xsi:type="genericextension:ExtensionAttribute" propertyName="stgTblCompressionCodecType">
+<propertyValue imx:id="ID_140" xsi:type="genericextension:StringValue"/>
+</ExtensionAttribute>
+</attributes>
+</genericContainer>
+</modelExtension>
+</IObject>
+</contents>
+</project:Project>
+<project:Project imx:id="U:59gzusNLEemReY7i0wbRUw" name="Chads_Data_Processing">
+<annotations>
+<Annotation imx:id="ID_141" xsi:type="description:Description"/>
+</annotations>
+<contents>
+<IObject imx:id="U:0EHhycNMEemyTsyoLv389g" xsi:type="folder:Folder" name="Data_Object">
+<contents>
+<IObject imx:id="U:qz4EOe6FEem9pGRXa0tb7w" xsi:type="folder:Folder" name="chads_dal">
+<contents>
+<IObject imx:id="U:d0YUZVY5Ee6PFifo29Pxkw" xsi:type="datarecord:Table" connection="stringIdentity:HIVE_conn_dal" connectionName="HIVE_conn_dal" connectionType="com.informatica.adapter.Hive.HiveConnectInfo" name="test17" ownerName="ddb_cms2012" physicalName="test17">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="primaryKey%2Fname" value1="*" key2="connection%2F%24identity" value2="stringIdentity:HIVE_conn_dal" key3="physicalName" value3="test17" key4="ownerName" value4="ddb_cms2012" key5="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value5="*" key6="connectionType" value6="com.informatica.adapter.Hive.HiveConnectInfo"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<columns>
+<Column imx:id="U:d0YUZlY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field1" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUZ1Y5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field2" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUaFY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field3" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUaVY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field4" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUalY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field5" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUa1Y5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field6" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUbFY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field7" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUbVY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field8" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUblY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field9" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUb1Y5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field10" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUcFY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field11" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUcVY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field12" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUclY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field13" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUc1Y5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field14" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUdFY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field15" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUdVY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field16" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUdlY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field17" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUd1Y5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field18" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:d0YUeFY5Ee6PFifo29Pxkw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="field19" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+</columns>
+</IObject>
+</contents>
+</IObject>
+<IObject imx:id="U:76Xjle5jEem9pGRXa0tb7w" xsi:type="folder:Folder" name="chads_Integration">
+<contents>
+<IObject imx:id="U:QQjZyu5kEem9pGRXa0tb7w" xsi:type="datarecord:Table" connection="stringIdentity:HIVE_conn_integration" connectionName="HIVE_conn_integration" connectionType="com.informatica.adapter.Hive.HiveConnectInfo" name="v_case_dim" ownerName="IDB_CMS2012" physicalName="v_case_dim" tableType="VIEW">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="primaryKey%2Fname" value1="*" key2="connection%2F%24identity" value2="stringIdentity:HIVE_conn_integration" key3="physicalName" value3="v_case_dim" key4="ownerName" value4="IDB_CMS2012" key5="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value5="*" key6="connectionType" value6="com.informatica.adapter.Hive.HiveConnectInfo"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<columns>
+<Column imx:id="U:QQjZy-5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_id" nullable="true" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="15"/>
+<Column imx:id="U:QQjZze5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="case_number" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:QQjZzO5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="master_case_id" nullable="true" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="15"/>
+<Column imx:id="U:i2Q4TvAzEemUFrHnsChbyw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="master_case_number" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:axDZqz-XEeuO91Ek86JTbQ" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="primary_position_identifier_case" nullable="true" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="15"/>
+<Column imx:id="U:axDZrD-XEeuO91Ek86JTbQ" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="primary_position_identifier_master_case" nullable="true" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="15"/>
+<Column imx:id="U:GMKgGE60Eeu0ISk5nk-3Dw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_classification_code" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:QQjZzu5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fchar" name="case_sensitive_indicator" nullable="true" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar" precision="1"/>
+<Column imx:id="U:QQjZz-5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fchar" name="case_personal_interest_indicator" nullable="true" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar" precision="1"/>
+<Column imx:id="U:OdmRgxzwEeqKwhej0GcCBw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fint" name="batch_id" nullable="true" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Finteger" precision="10"/>
+<Column imx:id="U:OdmRhBzwEeqKwhej0GcCBw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="load_date" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:QQjZ0u5kEem9pGRXa0tb7w" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="business_date" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:3JytAn0AEeyKbnNFHm94gA" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_service_type" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:3JytA30AEeyKbnNFHm94gA" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="last_updated_case_extension" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:7dgjfZSxEeytB3gkEp3iNA" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="master_case_life_cycle_indicator" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:7dgjfpSxEeytB3gkEp3iNA" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="last_updated_case_public_sector_extension" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:_25B6ztnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="case_created_date" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:_25B7DtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="case_closed_date" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+<Column imx:id="U:_25B7TtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_stage" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B7jtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_type" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B7ztnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_status_code" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B8DtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_sub_status_code" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B8TtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fdecimal" name="case_full_year_liability_amount" nullable="true" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" precision="22" scale="7"/>
+<Column imx:id="U:_25B8jtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="master_case_enforcement_region" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B8ztnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fdecimal" name="master_case_gross_weekly_income" nullable="true" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" precision="22" scale="7"/>
+<Column imx:id="U:_25B9DtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="master_case_maintenance_region" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:v71zR1CUEe6PYwORZh0WjA" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fvarchar" name="case_pwc_arrears_decision" nullable="true" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="30"/>
+<Column imx:id="U:_25B9jtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fchar" name="master_case_ever_in_enforcement_flag" nullable="true" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar" precision="1"/>
+<Column imx:id="U:_25B9ztnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fdecimal" name="master_case_weekly_liability_amount" nullable="true" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" precision="22" scale="7"/>
+<Column imx:id="U:_25B-DtnEe6NX7IYEKiZYw" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem%2Fstring" name="master_case_annual_review_date" nullable="true" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" precision="4000"/>
+</columns>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+<IObject imx:id="U:GLeWc8QWEemjwUyLxLFoFA" xsi:type="folder:Folder" name="ELT_Mapping">
+<contents>
+<IObject imx:id="U:LX4m8NV6EeqW5ds6bKnbOg" xsi:type="folder:Folder" name="chads_dal_incremental">
+<contents>
+<IObject imx:id="U:AlXcEDp1Ee6PdbuLJ2ZEsg" xsi:type="folder:Folder" name="ch17">
+<contents>
+<IObject imx:id="U:tDSirlX5Ee6PFifo29Pxkw" xsi:type="mapping1:Mapping" name="CONTACT_CASE_POSTN_TEMP_3">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<characteristics>
+<Characteristic imx:id="ID_142" xsi:type="runtime:RuntimeCharacteristic" maximumRuntimeIntervalPerSource="PT0S" selectedExecutionEnvironmentName="hadoop" stateStore.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.StateStore">
+<environments>
+<ExecutionEnvironment imx:id="ID_143" xsi:type="hadoop:SparkYarnExecutionEngine" version="1.5.1">
+<executionConfig imx:id="ID_144" xsi:type="hadoop:HadoopExecutionConfig" connectionName.="U:tDSizlX5Ee6PFifo29Pxkw">
+<executionParameters>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.sql.parquet.writeLegacyFormat" value="true"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.executor.memory" value="8G"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.driver.memory" value="8G"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.executorIdleTimeout" value="60s"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.enabled" value="true"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.initialExecutors" value="1"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.minExecutors" value="0"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.maxExecutors" value="10000"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.dynamicAllocation.schedulerBacklogTimeout" value="1s"/>
+<HadoopExecutionParameter xsi:type="hadoop:HadoopExecutionParameter" name="spark.shuffle.service.enabled" value="true"/>
+</executionParameters>
+</executionConfig>
+</ExecutionEnvironment>
+</environments>
+<handlers>
+<TxHandlerConfig imx:id="ID_155" xsi:type="source1:SourceTxHandlerConfig" txInstance="U:tDSislX5Ee6PFifo29Pxkw" selectedAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter"/>
+<TxHandlerConfig imx:id="ID_156" xsi:type="target1:TargetTxHandlerConfig" txInstance="U:nv3GkVY5Ee6PFifo29Pxkw" selectedAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalWriterDataAdapter" rejectDirectory.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.RejectDir" rejectFile="Write_test17.bad"/>
+</handlers>
+<streamingConfig imx:id="ID_157" xsi:type="runtime:StreamingConfig" batchInterval="PT20S" cacheRefreshInterval="PT1H"/>
+</Characteristic>
+<Characteristic imx:id="ID_158" xsi:type="optimizer:OptimizerCharacteristic">
+<configs>
+<OptimizerConfig imx:id="ID_159" xsi:type="pdo:PushdownConfig"/>
+</configs>
+</Characteristic>
+</characteristics>
+<definedLibraries imx:id="U:tDSir1X5Ee6PFifo29Pxkw" xsi:type="typelibrary:TypeLibrary" name="m_Type_Definition_Library" typeSystem="smd:com.informatica.metadata.seed.platform.Platform.typesystem"/>
+<instances>
+<Instance imx:id="U:tDSislX5Ee6PFifo29Pxkw" xsi:type="mapping1:Instance" name="Read_v_case_dim" transformation="U:tDSi0VX5Ee6PFifo29Pxkw">
+<fromOutlineLinks>
+<OutlineLink imx:id="ID_160" xsi:type="mapping1:OutlineLink" fromInstance="U:tDSislX5Ee6PFifo29Pxkw" toInstance="U:tDSiuFX5Ee6PFifo29Pxkw"/>
+</fromOutlineLinks>
+<ports>
+<TransformationFieldPort imx:id="ID_161" xsi:type="mapping1:TransformationFieldPort" instance="U:tDSislX5Ee6PFifo29Pxkw" transformationField="U:tDUY3FX5Ee6PFifo29Pxkw">
+<children>
+<NestedPort imx:id="ID_162" xsi:type="mapping1:NestedPort" toPorts="ID_163" parent="ID_161" structuralFeature="U:tDUY4FX5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_164" xsi:type="mapping1:NestedPort" toPorts="ID_165" parent="ID_161" structuralFeature="U:tDUY4VX5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_166" xsi:type="mapping1:NestedPort" toPorts="ID_167" parent="ID_161" structuralFeature="U:tDUY4lX5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_168" xsi:type="mapping1:NestedPort" toPorts="ID_169" parent="ID_161" structuralFeature="U:tDUY41X5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_170" xsi:type="mapping1:NestedPort" toPorts="ID_171" parent="ID_161" structuralFeature="U:tDUY5FX5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_172" xsi:type="mapping1:NestedPort" toPorts="ID_173" parent="ID_161" structuralFeature="U:tDUY5VX5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_174" xsi:type="mapping1:NestedPort" toPorts="ID_175" parent="ID_161" structuralFeature="U:tDUY61X5Ee6PFifo29Pxkw"/>
+</children>
+</TransformationFieldPort>
+</ports>
+</Instance>
+<Instance imx:id="U:tDSiuFX5Ee6PFifo29Pxkw" xsi:type="mapping1:Instance" name="Exp_Case" toOutlineLinks="ID_160" transformation="U:tDSi11X5Ee6PFifo29Pxkw">
+<fromOutlineLinks>
+<OutlineLink imx:id="ID_176" xsi:type="mapping1:OutlineLink" fromInstance="U:tDSiuFX5Ee6PFifo29Pxkw" toInstance="U:tDSiuVX5Ee6PFifo29Pxkw"/>
+</fromOutlineLinks>
+<ports>
+<TransformationFieldPort imx:id="ID_163" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_162" toPorts="ID_177" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyfVX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_165" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_164" toPorts="ID_178" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyflX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_167" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_166" toPorts="ID_179" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyf1X5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_169" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_168" toPorts="ID_180" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTygFX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_171" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_170" toPorts="ID_181" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTygVX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_173" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_172" toPorts="ID_182" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyglX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_175" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_174" toPorts="ID_183" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyg1X5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_184" xsi:type="mapping1:TransformationFieldPort" toPorts="ID_185" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:tDTyhFX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_186" xsi:type="mapping1:TransformationFieldPort" toPorts="ID_187" instance="U:tDSiuFX5Ee6PFifo29Pxkw" transformationField="U:BSFXRlYfEe6PFifo29Pxkw"/>
+</ports>
+</Instance>
+<Instance imx:id="U:tDSiuVX5Ee6PFifo29Pxkw" xsi:type="mapping1:Instance" name="Case_Latest" toOutlineLinks="ID_176" transformation="U:tDSi2FX5Ee6PFifo29Pxkw">
+<fromOutlineLinks>
+<OutlineLink imx:id="ID_188" xsi:type="mapping1:OutlineLink" fromInstance="U:tDSiuVX5Ee6PFifo29Pxkw" toInstance="U:nv3GkVY5Ee6PFifo29Pxkw"/>
+</fromOutlineLinks>
+<ports>
+<TransformationFieldPort imx:id="ID_177" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_163" toPorts="ID_189" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTydFX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_178" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_165" toPorts="ID_190" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTydVX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_179" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_167" toPorts="ID_191" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTydlX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_180" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_169" toPorts="ID_192" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTyd1X5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_181" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_171" toPorts="ID_193" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTyeFX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_182" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_173" toPorts="ID_194" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTyeVX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_183" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_175" toPorts="ID_195" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTyelX5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_185" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_184" toPorts="ID_196" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:tDTye1X5Ee6PFifo29Pxkw"/>
+<TransformationFieldPort imx:id="ID_187" xsi:type="mapping1:TransformationFieldPort" fromPort="ID_186" toPorts="ID_197" instance="U:tDSiuVX5Ee6PFifo29Pxkw" transformationField="U:BSEJJVYfEe6PFifo29Pxkw"/>
+</ports>
+</Instance>
+<Instance imx:id="U:nv3GkVY5Ee6PFifo29Pxkw" xsi:type="mapping1:Instance" name="Write_test17" toOutlineLinks="ID_188" transformation="U:nv3GklY5Ee6PFifo29Pxkw">
+<ports>
+<TransformationFieldPort imx:id="ID_198" xsi:type="mapping1:TransformationFieldPort" instance="U:nv3GkVY5Ee6PFifo29Pxkw" transformationField="U:nv3GlFY5Ee6PFifo29Pxkw">
+<children>
+<NestedPort imx:id="ID_189" xsi:type="mapping1:NestedPort" fromPort="ID_177" parent="ID_198" structuralFeature="U:hmbp81Y5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_190" xsi:type="mapping1:NestedPort" fromPort="ID_178" parent="ID_198" structuralFeature="U:hmbp9FY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_191" xsi:type="mapping1:NestedPort" fromPort="ID_179" parent="ID_198" structuralFeature="U:hmbp9VY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_192" xsi:type="mapping1:NestedPort" fromPort="ID_180" parent="ID_198" structuralFeature="U:hmbp9lY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_193" xsi:type="mapping1:NestedPort" fromPort="ID_181" parent="ID_198" structuralFeature="U:hmbp91Y5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_194" xsi:type="mapping1:NestedPort" fromPort="ID_182" parent="ID_198" structuralFeature="U:hmbp-FY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_195" xsi:type="mapping1:NestedPort" fromPort="ID_183" parent="ID_198" structuralFeature="U:hmbp-VY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_196" xsi:type="mapping1:NestedPort" fromPort="ID_185" parent="ID_198" structuralFeature="U:hmbp-lY5Ee6PFifo29Pxkw"/>
+<NestedPort imx:id="ID_197" xsi:type="mapping1:NestedPort" fromPort="ID_187" parent="ID_198" structuralFeature="U:hmbp-1Y5Ee6PFifo29Pxkw"/>
+</children>
+</TransformationFieldPort>
+</ports>
+</Instance>
+</instances>
+<parameters>
+<UserDefinedParameter imx:id="U:tDSiy1X5Ee6PFifo29Pxkw" xsi:type="parameter:UserDefinedParameter" name="hive_conn_dal" precision="-1" scale="-1" typeinfo="smd:com.informatica.metadata.seed.modeledtypes.ModeledTypeSeed.modeledtypes%2FConnection">
+<defaultValue imx:id="ID_199" xsi:type="parameter:ConnectionParameterValue" connectionName="HIVE_conn_dal"/>
+</UserDefinedParameter>
+<UserDefinedParameter imx:id="U:tDSizFX5Ee6PFifo29Pxkw" xsi:type="parameter:UserDefinedParameter" name="curr_business_date" precision="4000" typeinfo="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring">
+<defaultValue imx:id="ID_200" xsi:type="parameter:StringParameterValue" valueLiteral="2023-03-01"/>
+</UserDefinedParameter>
+<UserDefinedParameter imx:id="U:tDSizVX5Ee6PFifo29Pxkw" xsi:type="parameter:UserDefinedParameter" name="hive_conn_integration" precision="-1" scale="-1" typeinfo="smd:com.informatica.metadata.seed.modeledtypes.ModeledTypeSeed.modeledtypes%2FConnection">
+<defaultValue imx:id="ID_201" xsi:type="parameter:ConnectionParameterValue" connectionName="HIVE_conn_integration"/>
+</UserDefinedParameter>
+<UserDefinedParameter imx:id="U:tDSizlX5Ee6PFifo29Pxkw" xsi:type="parameter:UserDefinedParameter" name="cluster_conn_name" precision="-1" scale="-1" typeinfo="smd:com.informatica.metadata.seed.modeledtypes.ModeledTypeSeed.modeledtypes%2FConnection">
+<defaultValue imx:id="ID_202" xsi:type="parameter:ConnectionParameterValue" connectionName="HADOOP_cco_dwp_test"/>
+</UserDefinedParameter>
+</parameters>
+<transformations>
+<AbstractTransformation imx:id="U:tDSi0VX5Ee6PFifo29Pxkw" xsi:type="source:SourceTx" active="true" name="Read_v_case_dim" dso="U:tDUY2lX5Ee6PFifo29Pxkw">
+<anonymousDso imx:id="U:tDUY2lX5Ee6PFifo29Pxkw" xsi:type="datasourceoperation:ReadRelationalDataSourceOperation" name="v_case_dim" queryMode="SEMI" sqlQuery="SELECT+%60v_case_dim%60.%60case_id%60%2C%60v_case_dim%60.%60case_number%60%2C%60v_case_dim%60.%60master_case_id%60%2C%60v_case_dim%60.%60master_case_number%60%2C%60v_case_dim%60.%60primary_position_identifier_case%60%2C%60v_case_dim%60.%60primary_position_identifier_master_case%60%2C%60v_case_dim%60.%60case_classification_code%60%2C%60v_case_dim%60.%60case_sensitive_indicator%60%2C%60v_case_dim%60.%60case_personal_interest_indicator%60%2C%60v_case_dim%60.%60batch_id%60%2C%60v_case_dim%60.%60load_date%60%2C%60v_case_dim%60.%60business_date%60%2C%60v_case_dim%60.%60case_service_type%60%2C%60v_case_dim%60.%60last_updated_case_extension%60%2C%60v_case_dim%60.%60master_case_life_cycle_indicator%60%2C%60v_case_dim%60.%60last_updated_case_public_sector_extension%60%2C%60v_case_dim%60.%60case_created_date%60%2C%60v_case_dim%60.%60case_closed_date%60%2C%60v_case_dim%60.%60case_stage%60%2C%60v_case_dim%60.%60case_type%60%2C%60v_case_dim%60.%60case_status_code%60%2C%60v_case_dim%60.%60case_sub_status_code%60%2C%60v_case_dim%60.%60case_full_year_liability_amount%60%2C%60v_case_dim%60.%60master_case_enforcement_region%60%2C%60v_case_dim%60.%60master_case_gross_weekly_income%60%2C%60v_case_dim%60.%60master_case_maintenance_region%60%2C%60v_case_dim%60.%60master_case_ever_in_enforcement_flag%60%2C%60v_case_dim%60.%60master_case_weekly_liability_amount%60%2C%60v_case_dim%60.%60master_case_annual_review_date%60+FROM+%60IDB_CMS2012%60.%60v_case_dim%60%0D%0AWHERE+%60v_case_dim%60.%60business_date%60%3C%3D%27%24curr_business_date%27" tableDefinitions="U:QQjZyu5kEem9pGRXa0tb7w" typeSystem="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem">
+<defaultConfigs>
+<DSORuntimeConfig imx:id="U:tDUY3VX5Ee6PFifo29Pxkw" xsi:type="dsoconfig:RelationalDSORuntimeConfig" connectionName.="U:tDSizVX5Ee6PFifo29Pxkw"/>
+</defaultConfigs>
+<operations>
+<Capability imx:id="ID_203" xsi:type="datasourceoperation1:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:tDUY3VX5Ee6PFifo29Pxkw">
+<outGroups>
+<DataAccessGroup imx:id="ID_204" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:tDUY3lX5Ee6PFifo29Pxkw"/>
+</outGroups>
+</Capability>
+<Capability imx:id="ID_205" xsi:type="datasourceoperation1:LookupCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:tDUY3VX5Ee6PFifo29Pxkw"/>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:tDUY3lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:ComplexType" name="v_case_dim">
+<features>
+<StructuralFeature imx:id="U:tDUY4FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_id" nullable="true" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:tDUY4VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_number" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY4lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_id" nullable="true" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:tDUY41X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_number" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY5FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_primary_position_identifier_case" nullable="true" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:tDUY5VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_primary_position_identifier_master_case" nullable="true" precision="15" upper="1"/>
+<StructuralFeature imx:id="U:tDUY5lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_classification_code" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY51X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_sensitive_indicator" nullable="true" precision="1" upper="1"/>
+<StructuralFeature imx:id="U:tDUY6FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_personal_interest_indicator" nullable="true" precision="1" upper="1"/>
+<StructuralFeature imx:id="U:tDUY6VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="v_case_dim_batch_id" nullable="true" precision="10" upper="1"/>
+<StructuralFeature imx:id="U:tDUY6lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_load_date" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY61X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_business_date" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY7FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_service_type" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY7VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_last_updated_case_extension" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY7lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_life_cycle_indicator" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY71X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_last_updated_case_public_sector_extension" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY8FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_created_date" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY8VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_closed_date" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:tDUY8lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_stage" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY81X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_type" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY9FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_status_code" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY9VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_case_sub_status_code" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY9lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="v_case_dim_case_full_year_liability_amount" nullable="true" precision="22" scale="7" upper="1"/>
+<StructuralFeature imx:id="U:tDUY91X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_enforcement_region" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY-FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="v_case_dim_master_case_gross_weekly_income" nullable="true" precision="22" scale="7" upper="1"/>
+<StructuralFeature imx:id="U:tDUY-VX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_maintenance_region" nullable="true" precision="30" upper="1"/>
+<StructuralFeature imx:id="U:tDUY-lX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_ever_in_enforcement_flag" nullable="true" precision="1" upper="1"/>
+<StructuralFeature imx:id="U:tDUY-1X5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="v_case_dim_master_case_weekly_liability_amount" nullable="true" precision="22" scale="7" upper="1"/>
+<StructuralFeature imx:id="U:tDUY_FX5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="v_case_dim_master_case_annual_review_date" nullable="true" precision="4000" upper="1"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<typeLibrary imx:id="U:tDUY31X5Ee6PFifo29Pxkw" xsi:type="typelibrary:TypeLibrary"/>
+<relationalFields>
+<RelationalField imx:id="ID_206" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY4FX5Ee6PFifo29Pxkw" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_207" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY4VX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_208" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY4lX5Ee6PFifo29Pxkw" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_209" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY41X5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_210" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY5FX5Ee6PFifo29Pxkw" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_211" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY5VX5Ee6PFifo29Pxkw" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_212" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY5lX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_213" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY51X5Ee6PFifo29Pxkw" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar"/>
+<RelationalField imx:id="ID_214" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY6FX5Ee6PFifo29Pxkw" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar"/>
+<RelationalField imx:id="ID_215" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY6VX5Ee6PFifo29Pxkw" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Finteger"/>
+<RelationalField imx:id="ID_216" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY6lX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_217" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY61X5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_218" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY7FX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_219" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY7VX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_220" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY7lX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_221" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY71X5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_222" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY8FX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_223" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY8VX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+<RelationalField imx:id="ID_224" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY8lX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_225" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY81X5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_226" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY9FX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_227" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY9VX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_228" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY9lX5Ee6PFifo29Pxkw" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal"/>
+<RelationalField imx:id="ID_229" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY91X5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_230" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY-FX5Ee6PFifo29Pxkw" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal"/>
+<RelationalField imx:id="ID_231" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY-VX5Ee6PFifo29Pxkw" odbcPrecision="30" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar"/>
+<RelationalField imx:id="ID_232" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY-lX5Ee6PFifo29Pxkw" odbcPrecision="1" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnchar"/>
+<RelationalField imx:id="ID_233" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY-1X5Ee6PFifo29Pxkw" odbcPrecision="22" odbcScale="7" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal"/>
+<RelationalField imx:id="ID_234" xsi:type="datasourceoperation:RelationalField" feature="U:tDUY_FX5Ee6PFifo29Pxkw" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar"/>
+</relationalFields>
+<relationalRecordInstances>
+<RelationalRecordInstance imx:id="ID_235" xsi:type="datasourceoperation:RelationalRecordInstance" name="v_case_dim" record="U:QQjZyu5kEem9pGRXa0tb7w"/>
+</relationalRecordInstances>
+</anonymousDso>
+<sourceInterfaces>
+<SourceDataInterface imx:id="U:tDUY21X5Ee6PFifo29Pxkw" xsi:type="source:SourceDataInterface" name="Group" output="true">
+<sourceFields>
+<SourceTxField imx:id="U:tDUY3FX5Ee6PFifo29Pxkw" xsi:type="source:SourceTxField" type="U:tDUY3lX5Ee6PFifo29Pxkw" name="output" output="true"/>
+</sourceFields>
+</SourceDataInterface>
+</sourceInterfaces>
+</AbstractTransformation>
+<AbstractTransformation imx:id="U:tDSi11X5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionTx" name="Exp_Case">
+<expressionInterface>
+<ExpressionDataInterface imx:id="U:tDTyfFX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionDataInterface" input="true" name="Group" output="true">
+<expressionFields>
+<ExpressionField imx:id="U:tDTyfVX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="case_case_id" output="true"/>
+<ExpressionField imx:id="U:tDTyflX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="case_number" output="true"/>
+<ExpressionField imx:id="U:tDTyf1X5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="case_master_case_id" output="true"/>
+<ExpressionField imx:id="U:tDTygFX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="master_case_number" output="true"/>
+<ExpressionField imx:id="U:tDTygVX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="primary_position_identifier_case" output="true"/>
+<ExpressionField imx:id="U:tDTyglX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="primary_position_identifier_master_case" output="true"/>
+<ExpressionField imx:id="U:tDTyg1X5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="case_business_date" output="true"/>
+<ExpressionField imx:id="U:tDTyhFX5Ee6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" name="o_case_business_date" output="true" expression="IIF%28ISNULL%28case_business_date%29%2C%271900-01-01%27%2Ccase_business_date%29">
+<defaultValue xsi:type="types:StringValue" valueLiteral="ERROR%28%27transformation+error%27%29"/>
+</ExpressionField>
+<ExpressionField imx:id="U:BSFXRlYfEe6PFifo29Pxkw" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" name="case_i" output="true" expression="case_case_id">
+<defaultValue xsi:type="types:StringValue" valueLiteral="ERROR%28%27transformation+error%27%29"/>
+</ExpressionField>
+</expressionFields>
+</ExpressionDataInterface>
+</expressionInterface>
+</AbstractTransformation>
+<AbstractTransformation imx:id="U:tDSi2FX5Ee6PFifo29Pxkw" xsi:type="rank:RankTx" active="true" name="Case_Latest" cacheDir.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.CacheDir" caseSensitive="true" countOfRanks="1" scope="allInput" top="true">
+<groupByFields imx:id="ID_238" xsi:type="transformation:TransformationFieldList">
+<fields>
+<TransformationFieldRef imx:id="ID_239" xsi:type="transformation:TransformationFieldRef" transformationField="U:tDTydFX5Ee6PFifo29Pxkw"/>
+</fields>
+</groupByFields>
+<rankByField imx:id="ID_240" xsi:type="transformation:TransformationFieldRef" transformationField="U:tDTye1X5Ee6PFifo29Pxkw"/>
+<rankInterface>
+<RankDataInterface imx:id="U:tDTyclX5Ee6PFifo29Pxkw" xsi:type="rank:RankDataInterface" input="true" name="Group" output="true">
+<rankFields>
+<RankField imx:id="U:tDTyc1X5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" precision="10" upper="1" name="RANKINDEX" output="true">
+<defaultValue xsi:type="types:StringValue" valueLiteral="ERROR%28%27transformation+error%27%29"/>
+</RankField>
+<RankField imx:id="U:tDTydFX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="case_case_id" output="true"/>
+<RankField imx:id="U:tDTydVX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="case_number" output="true"/>
+<RankField imx:id="U:tDTydlX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="case_master_case_id" output="true"/>
+<RankField imx:id="U:tDTyd1X5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="master_case_number" output="true"/>
+<RankField imx:id="U:tDTyeFX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="primary_position_identifier_case" output="true"/>
+<RankField imx:id="U:tDTyeVX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="primary_position_identifier_master_case" output="true"/>
+<RankField imx:id="U:tDTyelX5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="case_business_date" output="true"/>
+<RankField imx:id="U:tDTye1X5Ee6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="4000" upper="1" input="true" name="o_case_business_date" output="true" expression="o_case_business_date"/>
+<RankField imx:id="U:BSEJJVYfEe6PFifo29Pxkw" xsi:type="rank:RankField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="15" upper="1" input="true" name="case_i" output="true" expression="case_i"/>
+</rankFields>
+</RankDataInterface>
+</rankInterface>
+</AbstractTransformation>
+<AbstractTransformation imx:id="U:nv3GklY5Ee6PFifo29Pxkw" xsi:type="target:TargetTx" active="true" name="Write_test17" dso="U:hmbp8FY5Ee6PFifo29Pxkw">
+<anonymousDso imx:id="U:hmbp8FY5Ee6PFifo29Pxkw" xsi:type="datasourceoperation:WriteRelationalDataSourceOperation" name="test17" loadType="Normal" tableDefinition="U:d0YUZVY5Ee6PFifo29Pxkw" truncateTargetTable="true" typeSystem="smd:com.informatica.adapter.Hive.HiveTypeSystem.typesystem">
+<defaultConfigs>
+<DSORuntimeConfig imx:id="U:nv3GlVY5Ee6PFifo29Pxkw" xsi:type="dsoconfig:RelationalDSORuntimeConfig" connectionName.="U:tDSiy1X5Ee6PFifo29Pxkw"/>
+</defaultConfigs>
+<operations>
+<Capability imx:id="ID_242" xsi:type="datasourceoperation1:WriteCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalWriterDataAdapter" defaultConfig="U:nv3GlVY5Ee6PFifo29Pxkw">
+<inGroups>
+<DataAccessGroup imx:id="ID_243" xsi:type="datasourceoperation1:DataAccessGroup" groupType="U:hmbp8VY5Ee6PFifo29Pxkw" input="true"/>
+</inGroups>
+</Capability>
+</operations>
+<ownedCapabilityTypes>
+<ComplexType imx:id="U:hmbp8VY5Ee6PFifo29Pxkw" xsi:type="typelibrary:ComplexType" name="test17">
+<features>
+<StructuralFeature imx:id="U:hmbp81Y5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field1" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp9FY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field2" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp9VY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field3" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp9lY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field4" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp91Y5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field5" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp-FY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field6" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp-VY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field7" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp-lY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field8" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp-1Y5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field9" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp_FY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field10" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp_VY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field11" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp_lY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field12" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbp_1Y5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field13" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqAFY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field14" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqAVY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field15" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqAlY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field16" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqA1Y5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field17" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqBFY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field18" nullable="true" precision="4000" upper="1"/>
+<StructuralFeature imx:id="U:hmbqBVY5Ee6PFifo29Pxkw" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="field19" nullable="true" precision="4000" upper="1"/>
+</features>
+</ComplexType>
+</ownedCapabilityTypes>
+<typeLibrary imx:id="U:hmbp8lY5Ee6PFifo29Pxkw" xsi:type="typelibrary:TypeLibrary"/>
+<relationalFields>
+<RelationalField imx:id="ID_244" xsi:type="datasourceoperation:RelationalField" column="U:d0YUZlY5Ee6PFifo29Pxkw" feature="U:hmbp81Y5Ee6PFifo29Pxkw" name="field1" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_246" xsi:type="datasourceoperation:RelationalField" column="U:d0YUZ1Y5Ee6PFifo29Pxkw" feature="U:hmbp9FY5Ee6PFifo29Pxkw" name="field2" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_247" xsi:type="datasourceoperation:RelationalField" column="U:d0YUaFY5Ee6PFifo29Pxkw" feature="U:hmbp9VY5Ee6PFifo29Pxkw" name="field3" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_248" xsi:type="datasourceoperation:RelationalField" column="U:d0YUaVY5Ee6PFifo29Pxkw" feature="U:hmbp9lY5Ee6PFifo29Pxkw" name="field4" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_249" xsi:type="datasourceoperation:RelationalField" column="U:d0YUalY5Ee6PFifo29Pxkw" feature="U:hmbp91Y5Ee6PFifo29Pxkw" name="field5" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_250" xsi:type="datasourceoperation:RelationalField" column="U:d0YUa1Y5Ee6PFifo29Pxkw" feature="U:hmbp-FY5Ee6PFifo29Pxkw" name="field6" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_251" xsi:type="datasourceoperation:RelationalField" column="U:d0YUbFY5Ee6PFifo29Pxkw" feature="U:hmbp-VY5Ee6PFifo29Pxkw" name="field7" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_252" xsi:type="datasourceoperation:RelationalField" column="U:d0YUbVY5Ee6PFifo29Pxkw" feature="U:hmbp-lY5Ee6PFifo29Pxkw" name="field8" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_253" xsi:type="datasourceoperation:RelationalField" column="U:d0YUblY5Ee6PFifo29Pxkw" feature="U:hmbp-1Y5Ee6PFifo29Pxkw" name="field9" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_254" xsi:type="datasourceoperation:RelationalField" column="U:d0YUb1Y5Ee6PFifo29Pxkw" feature="U:hmbp_FY5Ee6PFifo29Pxkw" name="field10" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_255" xsi:type="datasourceoperation:RelationalField" column="U:d0YUcFY5Ee6PFifo29Pxkw" feature="U:hmbp_VY5Ee6PFifo29Pxkw" name="field11" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_256" xsi:type="datasourceoperation:RelationalField" column="U:d0YUcVY5Ee6PFifo29Pxkw" feature="U:hmbp_lY5Ee6PFifo29Pxkw" name="field12" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_257" xsi:type="datasourceoperation:RelationalField" column="U:d0YUclY5Ee6PFifo29Pxkw" feature="U:hmbp_1Y5Ee6PFifo29Pxkw" name="field13" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_258" xsi:type="datasourceoperation:RelationalField" column="U:d0YUc1Y5Ee6PFifo29Pxkw" feature="U:hmbqAFY5Ee6PFifo29Pxkw" name="field14" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_259" xsi:type="datasourceoperation:RelationalField" column="U:d0YUdFY5Ee6PFifo29Pxkw" feature="U:hmbqAVY5Ee6PFifo29Pxkw" name="field15" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_260" xsi:type="datasourceoperation:RelationalField" column="U:d0YUdVY5Ee6PFifo29Pxkw" feature="U:hmbqAlY5Ee6PFifo29Pxkw" name="field16" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_261" xsi:type="datasourceoperation:RelationalField" column="U:d0YUdlY5Ee6PFifo29Pxkw" feature="U:hmbqA1Y5Ee6PFifo29Pxkw" name="field17" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_262" xsi:type="datasourceoperation:RelationalField" column="U:d0YUd1Y5Ee6PFifo29Pxkw" feature="U:hmbqBFY5Ee6PFifo29Pxkw" name="field18" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+<RelationalField imx:id="ID_263" xsi:type="datasourceoperation:RelationalField" column="U:d0YUeFY5Ee6PFifo29Pxkw" feature="U:hmbqBVY5Ee6PFifo29Pxkw" name="field19" odbcPrecision="4000" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fvarchar" recordInstance="ID_245"/>
+</relationalFields>
+<relationalRecordInstance imx:id="ID_245" xsi:type="datasourceoperation:RelationalRecordInstance" name="test17" record="U:d0YUZVY5Ee6PFifo29Pxkw"/>
+</anonymousDso>
+<targetInterfaces>
+<TargetDataInterface imx:id="U:nv3Gk1Y5Ee6PFifo29Pxkw" xsi:type="target:TargetDataInterface" input="true" name="Group">
+<targetFields>
+<TargetTxField imx:id="U:nv3GlFY5Ee6PFifo29Pxkw" xsi:type="target:TargetTxField" type="U:hmbp8VY5Ee6PFifo29Pxkw" input="true" name="Input"/>
+</targetFields>
+</TargetDataInterface>
+</targetInterfaces>
+</AbstractTransformation>
+</transformations>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+<IObject imx:id="U:v7En5cWjEemjwUyLxLFoFA" xsi:type="folder:Folder" name="ELT_Workflow">
+<contents>
+<IObject imx:id="U:B_Y0YLHrEe2T0OvJBzvHxg" xsi:type="folder:Folder" name="chads_dal_incremental">
+<contents>
+<IObject imx:id="U:K5YC4z3PEe6OGUzn9F8liQ" xsi:type="folder:Folder" name="ch17">
+<contents>
+<IObject imx:id="U:uV8R8lDMEe6v1D3lCLRqXw" xsi:type="workflow:Workflow" firstInstance="U:uV8R81DMEe6v1D3lCLRqXw" name="WF">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<characteristics>
+<Characteristic imx:id="ID_264" xsi:type="workflow:RuntimeWorkflowCharacteristic" loglevel="INFO"/>
+</characteristics>
+<taskInstances>
+<TaskInstance imx:id="U:uV8R81DMEe6v1D3lCLRqXw" xsi:type="workflow:TaskInstance" name="Start_Event" task="U:uV8R9lDMEe6v1D3lCLRqXw">
+<anonymousTask imx:id="U:uV8R9lDMEe6v1D3lCLRqXw" xsi:type="basic:StartTask" name="Start_Event"/>
+<outgoingSequenceFlows>
+<SequenceFlow imx:id="U:FcQxG1X9Ee6PFifo29Pxkw" xsi:type="workflow:SequenceFlow" fromInstance="U:uV8R81DMEe6v1D3lCLRqXw" name="Start_Event_to_CONTACT_CASE_POSTN_TEMP_3" toInstance="U:FcQxC1X9Ee6PFifo29Pxkw"/>
+</outgoingSequenceFlows>
+</TaskInstance>
+<TaskInstance imx:id="U:uV8R9FDMEe6v1D3lCLRqXw" xsi:type="workflow:TaskInstance" incomingSequenceFlows="U:FcQxDVX9Ee6PFifo29Pxkw" name="End_Event" task="U:uV8R9VDMEe6v1D3lCLRqXw">
+<anonymousTask imx:id="U:uV8R9VDMEe6v1D3lCLRqXw" xsi:type="basic:EndTask" name="End_Event"/>
+</TaskInstance>
+<TaskInstance imx:id="U:FcQxC1X9Ee6PFifo29Pxkw" xsi:type="workflow:TaskInstance" incomingSequenceFlows="U:FcQxG1X9Ee6PFifo29Pxkw" name="CONTACT_CASE_POSTN_TEMP_3" task="U:FcQxDFX9Ee6PFifo29Pxkw">
+<anonymousTask imx:id="U:FcQxDFX9Ee6PFifo29Pxkw" xsi:type="mapping:MappingTask" name="CONTACT_CASE_POSTN_TEMP_3" mapping="U:tDSirlX5Ee6PFifo29Pxkw">
+<annotations>
+<Annotation imx:id="ID_265" xsi:type="genericannotation:GenericAnnotation" source="autoDeploySource">
+<nameValuePairs>
+<NameValuePair imx:id="ID_266" xsi:type="genericannotation:NameValuePair" name="isSetToAutoDeploy">
+<value xsi:type="types:BooleanValue"/>
+</NameValuePair>
+</nameValuePairs>
+</Annotation>
+</annotations>
+<mappingTaskConfig imx:id="U:FcQxD1X9Ee6PFifo29Pxkw" xsi:type="mapping:MappingTaskConfig">
+<clusterIdentifier imx:id="U:FcQxEFX9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject"/>
+<dateFormat imx:id="U:FcQxEVX9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject" value="MM%2FDD%2FYYYY+HH24:MI:SS"/>
+<highPrecisionEnabled imx:id="U:FcQxElX9Ee6PFifo29Pxkw" xsi:type="property:BooleanBoxedReceiverObject" value="true"/>
+<javaClasspath imx:id="U:FcQxE1X9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject"/>
+<optimizationLevel imx:id="U:FcQxFFX9Ee6PFifo29Pxkw" xsi:type="property:IntegerBoxedReceiverObject" value="-1"/>
+<overrideTracingLevel imx:id="U:FcQxFVX9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject" value="normal"/>
+<sessionLogFileDirectory imx:id="U:FcQxFlX9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject" isReceiving="true"/>
+<sessionLogFileName imx:id="U:FcQxF1X9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject" value="CONTACT_CASE_POSTN_TEMP_3"/>
+<sessionLogSaveRunCount imx:id="U:FcQxGFX9Ee6PFifo29Pxkw" xsi:type="property:IntegerBoxedReceiverObject" value="1"/>
+<sessionLogSaveType imx:id="U:FcQxGVX9Ee6PFifo29Pxkw" xsi:type="property:EnumBoxedReceiverObject" value="com.informatica.metadata.common.task.mapping.SessionLogSaveType:TIMESTAMP"/>
+<sortOrder imx:id="U:FcQxGlX9Ee6PFifo29Pxkw" xsi:type="property:StringBoxedReceiverObject" value="binary"/>
+</mappingTaskConfig>
+</anonymousTask>
+<inputBindings>
+<InputBinding imx:id="ID_268" xsi:type="binding:InputBinding">
+<input imx:id="U:FcQxDlX9Ee6PFifo29Pxkw" xsi:type="binding:BoxedReceiverTaskInput" boxedReceiverObject="U:FcQxFlX9Ee6PFifo29Pxkw"/>
+<value imx:id="ID_269" xsi:type="value:RollupParameterValue" parameter="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.LogDir"/>
+</InputBinding>
+</inputBindings>
+<outgoingSequenceFlows>
+<SequenceFlow imx:id="U:FcQxDVX9Ee6PFifo29Pxkw" xsi:type="workflow:SequenceFlow" fromInstance="U:FcQxC1X9Ee6PFifo29Pxkw" name="CONTACT_CASE_POSTN_TEMP_3_to_End_Event" toInstance="U:uV8R9FDMEe6v1D3lCLRqXw"/>
+</outgoingSequenceFlows>
+</TaskInstance>
+</taskInstances>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+<IObject imx:id="U:i2YB8sWjEemjwUyLxLFoFA" xsi:type="folder:Folder" name="Application">
+<contents>
+<IObject imx:id="U:j1EqpCvOEeqdZsfyb9jVKw" xsi:type="folder:Folder" name="dal_incremental">
+<contents>
+<IObject imx:id="U:OoPU_FDNEe6v1D3lCLRqXw" xsi:type="common:ApplicationSpec" name="Application6">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.tools.model key1="%28com.informatica.metadata.common.description.Description%29annotations%2Fbody" value1="*"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<features>
+<Feature imx:id="U:eRkQXlOsEe6trWRL3n3aTw" xsi:type="common1:WorkflowFeature" name="WF" workflow="U:uV8R8lDMEe6v1D3lCLRqXw">
+<WorkflowFeatureconfig imx:id="ID_270" xsi:type="common1:WorkflowFeatureConfig"/>
+</Feature>
+</features>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</IObject>
+</contents>
+</project:Project>
+<project:Project imx:id="U:RR2yulY6Ee6PFifo29Pxkw" name="Application6">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="PROJECT_TYPE" value1="DEPLOYMENT_UNIT"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<contents>
+<IObject imx:id="U:RR2yu1Y6Ee6PFifo29Pxkw" xsi:type="common3:Application" name="Application6" spec="U:OoPU_FDNEe6v1D3lCLRqXw">
+<imx:annotations>
+<imx:IGenericAnnotations>
+<com.informatica.ds.app.metadata.DeploymentAnnotation key1="VALIDATION_TYPE" value1="SKIP"/>
+</imx:IGenericAnnotations>
+</imx:annotations>
+<attributes>
+<Attribute imx:id="U:RR2yvFY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Unique+Idenitifier" value="U:OoPU_FDNEe6v1D3lCLRqXw"/>
+<Attribute imx:id="U:RR2yvVY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Creation+Domain" value="BOM_DSP_INFBDM_DEV:6005"/>
+<Attribute imx:id="U:RR2yvlY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Creation+Project+Path" value="Chads_Data_Processing%5CApplication%5Cdal_incremental"/>
+<Attribute imx:id="U:RR2yv1Y6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Creation+Date" value="2023-09-11T19:01:27%2B0100"/>
+<Attribute imx:id="U:RR2ywFY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Created+By" value="saswati.das"/>
+<Attribute imx:id="U:RR2ywVY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Last+Modification+Date" value="2023-09-18T16:44:13%2B0100"/>
+<Attribute imx:id="U:RR2ywlY6Ee6PFifo29Pxkw" xsi:type="common3:Attribute" name="Last+Modified+By" value="saswati.das"/>
+</attributes>
+</IObject>
+</contents>
+</project:Project>
+<imx:crc value="346259271"/>
+</imx:IMX>
